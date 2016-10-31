@@ -10,7 +10,7 @@
 /* ------------- Global ------------- */
 
 * {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
 }
 
 html {
@@ -21,6 +21,7 @@ body {
 	height: 100%;
 	display: -webkit-flex;
 	display:         flex;
+	flex-direction: column;
 	-webkit-align-items: center;
 		align-items: center;
 	-webkit-justify-content: center;
@@ -33,7 +34,30 @@ body {
 	background: -moz-linear-gradient(right, #65997d, #fccb6e); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, #65997d, #fccb62); /* Standard syntax (must be last) */
 	background-attachment: fixed;
+}
 
+strong {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 10vmin;
+}
+
+h2 {
+	font-size: 6vmin;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 0 0 5px 0;
+	color: #444;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.title {
+	margin: 10px;
 }
 
 .login {
@@ -44,12 +68,13 @@ body {
 		align-items: center;
 	-webkit-justify-content: center;
 		justify-content: center;
-
 }
 
 .login .form-control {
 	margin-right: 10px;
 	padding: 24px 22px;
+
+	width: 100%;
 
 	text-transform: uppercase;
 	text-align: center;
