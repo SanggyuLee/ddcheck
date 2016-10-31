@@ -3,7 +3,10 @@ DDcheck - DONGDO youth #2 attendance book project
 
 Introduction
 ---------------------------------------
+
 This project is supported by 3D Foundation(Dong-Do Developers Foundataion).
+
+
 If you need help using our project, please don't use it.
 
 
