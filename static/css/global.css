@@ -26,11 +26,12 @@ body {
 	-webkit-justify-content: center;
 		justify-content: center;
 
-	/* Gradient background from #f7cac9 to #92a8d1 */ 
-	background: -webkit-linear-gradient(top, #92a8d1, #f7cac9); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom, #92a8d1, #f7cac9); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottm, #92a8d1, #f7cac9); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom, #92a8d1, #f7cac9); /* Standard syntax (must be last) */
+	/* Color of the 2016: #f7cac9 to #92a8d1 */ 
+	/* Gradient background */
+	background: -webkit-linear-gradient(left, #65997d, #fccb6e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #65997d, #fccb6e); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #65997d, #fccb6e); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #65997d, #fccb62); /* Standard syntax (must be last) */
 	background-attachment: fixed;
 
 }
