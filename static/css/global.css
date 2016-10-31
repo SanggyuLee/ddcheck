@@ -1,0 +1,55 @@
+/* ------------- Fonts ------------- */
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Code Pro'), local('SourceCodePro'), url(fonts/SourceCodePro-Regular.ttf) format('truetype');
+}
+
+/* ------------- Global ------------- */
+
+* {
+	font-family: 'Source Code Pro', monospace;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: -webkit-flex;
+	display:         flex;
+	-webkit-align-items: center;
+		align-items: center;
+	-webkit-justify-content: center;
+		justify-content: center;
+
+	/* Gradient background from #f7cac9 to #92a8d1 */ 
+	background: -webkit-linear-gradient(top, #92a8d1, #f7cac9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, #92a8d1, #f7cac9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottm, #92a8d1, #f7cac9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #92a8d1, #f7cac9); /* Standard syntax (must be last) */
+	background-attachment: fixed;
+
+}
+
+.login {
+	display: -webkit-flex;
+	display:         flex;
+
+	-webkit-align-items: center;
+		align-items: center;
+	-webkit-justify-content: center;
+		justify-content: center;
+
+}
+
+.login .form-control {
+	margin-right: 10px;
+	padding: 24px 22px;
+
+	text-transform: uppercase;
+	text-align: center;
+}
