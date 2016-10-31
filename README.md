@@ -13,7 +13,7 @@ How to install
 Git을 사용할 줄 안다면,
 
 ```sh
-git clone http://github.com/SanggyuLee/ux-design
+git clone http://github.com/SanggyuLee/ddcheck
 ```
 
 Git을 사용해 본적이 없다면, 오른쪽 위에 Clone or download를 누르고 Download Zip을 누릅니다.
