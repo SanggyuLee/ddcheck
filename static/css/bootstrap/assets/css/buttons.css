@@ -134,11 +134,11 @@
 	color: #c8c8c8;
 	box-shadow: none;
 }
-.btn-login.outline {
+.btn-login.outline, .btn-login.outling:focus {
 	border: 2px solid #f8f8f8;
 	color: #f8f8f8;
 }
-.btn-login.outline:hover, .btn-login.outline:focus, .btn-login.outline:active, .btn-login.outline.active, .open > .dropdown-toggle.btn-login {
+.btn-login.outline:hover, .btn-login.outline:active, .btn-login.outline.active, .open > .dropdown-toggle.btn-login {
 	color: #333;
 	border-color: #333;
 }
