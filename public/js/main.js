@@ -11,15 +11,22 @@ let appear = (element) => {
 	let timer = setInterval(slowMotion, 40);
 };
 
-let isPasswordValid = () => {
-	return false;
+let isPasswordValid = (password) => {
+	let xhr = new XMLHttpRequest();
+	xhr.open("GET", "/api/depts/" + password, false);
+	xhr.send();
+
+	return (xhr.response === "null") ? false : xhr.response;
 };
 
 document.body.addEventListener('click', function(event) {
 	if(event.target.id === "login-button") {
 		let password = document.getElementById("password").value;
-
-		if(!isPasswordValid()) {
+		let dept = isPasswordValid(password);
+		if(dept) {
+			dept = JSON.parse(dept);
+			window.location.assign("main?title=" + dept.name + "&code=" + dept.code);
+		} else {
 			let loginForm = document.querySelector(".login");
 			let location = 18, num = 1;
 
@@ -34,10 +41,6 @@ document.body.addEventListener('click', function(event) {
 			};
 
 			let timer = setInterval(shake, 10);
-
-			return;
 		}
-
-		window.location.assign("../main.html");
 	}
 });

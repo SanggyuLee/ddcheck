@@ -26,14 +26,3 @@ body {
 	background: linear-gradient(to right, #65997d, #fccb62); /* Standard syntax (must be last) */
 	background-attachment: fixed;
 }
-
-.menu {
-	flex: 1;
-	height: 100%;
-	background-color: black;
-}
-
-.contents {
-	flex: 8;
-	background-color: orange;
-}
